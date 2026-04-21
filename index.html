@@ -15,10 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 
-  <!-- ============================================================
-       GOOGLE ADSENSE — replace ca-pub-XXXXXXXXXXXXXXXX with your
-       publisher ID once your AdSense account is approved.
-       ============================================================ -->
+  <!-- Google AdSense — add your publisher ID after approval -->
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
 
   <style>
@@ -48,14 +45,8 @@
       }
     }
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
 
-    /* NAV */
     nav {
       background: var(--surface);
       border-bottom: 0.5px solid var(--border);
@@ -67,32 +58,17 @@
       top: 0;
       z-index: 10;
     }
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: var(--text);
-      text-decoration: none;
-    }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 600; color: var(--text); text-decoration: none; }
     .nav-logo span { color: var(--gold); }
     .nav-tagline { font-size: 0.78rem; color: var(--muted); }
 
-    /* LAYOUT */
     .container { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
 
-    /* HERO */
     .hero { text-align: center; padding: 2rem 1rem 1.5rem; }
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.25rem;
-      font-weight: 600;
-      line-height: 1.2;
-      color: var(--text);
-    }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.25rem; font-weight: 600; line-height: 1.2; color: var(--text); }
     .hero h1 span { color: var(--gold); }
     .hero p { color: var(--muted); margin-top: 0.6rem; font-size: 1rem; }
 
-    /* AD SLOTS */
     .ad-slot {
       background: var(--surface);
       border: 0.5px dashed var(--border);
@@ -108,7 +84,6 @@
       justify-content: center;
     }
 
-    /* TABS */
     .tabs {
       display: flex;
       border-radius: var(--radius-lg);
@@ -130,12 +105,8 @@
       font-family: 'DM Sans', sans-serif;
       transition: all 0.2s;
     }
-    .tab.active {
-      background: var(--dark);
-      color: #fff;
-    }
+    .tab.active { background: var(--dark); color: #fff; }
 
-    /* CARD */
     .card {
       background: var(--surface);
       border: 0.5px solid var(--border);
@@ -152,7 +123,6 @@
       margin-bottom: 1.1rem;
     }
 
-    /* FORM */
     .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
     .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
     .form-group.full { grid-column: 1 / -1; }
@@ -175,21 +145,10 @@
     }
     textarea { resize: vertical; min-height: 90px; }
 
-    .divider {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin: 1rem 0;
-    }
+    .divider { display: flex; align-items: center; gap: 0.75rem; margin: 1rem 0; }
     .divider span { font-size: 0.75rem; color: var(--hint); white-space: nowrap; }
-    .divider::before, .divider::after {
-      content: '';
-      flex: 1;
-      height: 0.5px;
-      background: var(--border);
-    }
+    .divider::before, .divider::after { content: ''; flex: 1; height: 0.5px; background: var(--border); }
 
-    /* BUTTON */
     .btn-primary {
       width: 100%;
       padding: 0.9rem;
@@ -212,7 +171,6 @@
     .btn-primary:active:not(:disabled) { transform: scale(0.99); }
     .btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
 
-    /* OUTPUT */
     .output-card {
       background: var(--surface);
       border: 0.5px solid var(--border);
@@ -228,12 +186,7 @@
       padding-bottom: 0.85rem;
       border-bottom: 0.5px solid var(--border);
     }
-    .output-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--text);
-    }
+    .output-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 500; color: var(--text); }
     .btn-secondary {
       padding: 0.5rem 1rem;
       background: transparent;
@@ -247,18 +200,10 @@
       transition: background 0.15s;
     }
     .btn-secondary:hover { background: var(--bg); }
-    .output-body {
-      font-size: 0.875rem;
-      line-height: 1.85;
-      color: var(--text);
-      white-space: pre-wrap;
-      font-family: 'DM Sans', sans-serif;
-    }
+    .output-body { font-size: 0.875rem; line-height: 1.85; color: var(--text); white-space: pre-wrap; }
 
-    /* SPINNER */
     .spinner {
-      width: 16px;
-      height: 16px;
+      width: 16px; height: 16px;
       border: 2px solid rgba(255,255,255,0.3);
       border-top-color: #fff;
       border-radius: 50%;
@@ -266,15 +211,7 @@
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.78rem;
-      color: var(--hint);
-      border-top: 0.5px solid var(--border);
-      margin-top: 2rem;
-    }
+    footer { text-align: center; padding: 2rem 1rem; font-size: 0.78rem; color: var(--hint); border-top: 0.5px solid var(--border); margin-top: 2rem; }
     footer a { color: var(--gold); text-decoration: none; }
 
     @media (max-width: 580px) {
@@ -297,10 +234,8 @@
     <p>Enter your details — get a professional CV and cover letter in seconds.</p>
   </div>
 
-  <!-- AD SLOT TOP -->
   <div class="ad-slot">
-    <!-- AdSense Banner — replace with your ad code after approval -->
-    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+    <!-- AdSense ad — replace after approval -->
     Advertisement
   </div>
 
@@ -314,56 +249,25 @@
     <div class="card">
       <div class="section-label">Your details</div>
       <div class="form-grid">
-        <div class="form-group">
-          <label for="cv-name">Full name *</label>
-          <input id="cv-name" type="text" placeholder="e.g. Kwame Asante" />
-        </div>
-        <div class="form-group">
-          <label for="cv-title">Target job title *</label>
-          <input id="cv-title" type="text" placeholder="e.g. Marketing Manager" />
-        </div>
-        <div class="form-group">
-          <label for="cv-email">Email address</label>
-          <input id="cv-email" type="email" placeholder="you@email.com" />
-        </div>
-        <div class="form-group">
-          <label for="cv-phone">Phone number</label>
-          <input id="cv-phone" type="tel" placeholder="+233 XX XXX XXXX" />
-        </div>
-        <div class="form-group">
-          <label for="cv-location">Location</label>
-          <input id="cv-location" type="text" placeholder="e.g. Accra, Ghana" />
-        </div>
-        <div class="form-group">
-          <label for="cv-link">LinkedIn / Website</label>
-          <input id="cv-link" type="text" placeholder="linkedin.com/in/yourname" />
-        </div>
-        <div class="form-group full">
-          <label for="cv-experience">Work experience</label>
-          <textarea id="cv-experience" placeholder="List your jobs and achievements. e.g: 2021–2024 Sales Manager at ABC Ltd — grew revenue by 40%, led a team of 10. 2019–2021 Sales Rep at XYZ…"></textarea>
-        </div>
-        <div class="form-group full">
-          <label for="cv-education">Education</label>
-          <textarea id="cv-education" placeholder="e.g. BSc Business Administration, University of Ghana, 2019. WASSCE, Accra Academy, 2015." style="min-height:70px"></textarea>
-        </div>
-        <div class="form-group full">
-          <label for="cv-skills">Skills</label>
-          <input id="cv-skills" type="text" placeholder="e.g. Microsoft Excel, Project Management, Canva, Customer Service, Leadership" />
-        </div>
-        <div class="form-group full">
-          <label for="cv-target">Any extra notes (optional)</label>
-          <input id="cv-target" type="text" placeholder="e.g. Applying for remote roles, entry level, career change from teaching to HR…" />
-        </div>
+        <div class="form-group"><label>Full name *</label><input id="cv-name" type="text" placeholder="e.g. Kwame Asante" /></div>
+        <div class="form-group"><label>Target job title *</label><input id="cv-title" type="text" placeholder="e.g. Marketing Manager" /></div>
+        <div class="form-group"><label>Email address</label><input id="cv-email" type="email" placeholder="you@email.com" /></div>
+        <div class="form-group"><label>Phone number</label><input id="cv-phone" type="tel" placeholder="+233 XX XXX XXXX" /></div>
+        <div class="form-group"><label>Location</label><input id="cv-location" type="text" placeholder="e.g. Accra, Ghana" /></div>
+        <div class="form-group"><label>LinkedIn / Website</label><input id="cv-link" type="text" placeholder="linkedin.com/in/yourname" /></div>
+        <div class="form-group full"><label>Work experience</label><textarea id="cv-experience" placeholder="List your jobs and achievements. e.g: 2021–2024 Sales Manager at ABC Ltd — grew revenue by 40%, led a team of 10..."></textarea></div>
+        <div class="form-group full"><label>Education</label><textarea id="cv-education" placeholder="e.g. BSc Business Administration, University of Ghana, 2019." style="min-height:70px"></textarea></div>
+        <div class="form-group full"><label>Skills</label><input id="cv-skills" type="text" placeholder="e.g. Microsoft Excel, Project Management, Canva, Customer Service" /></div>
+        <div class="form-group full"><label>Extra notes (optional)</label><input id="cv-target" type="text" placeholder="e.g. Applying for remote roles, career change, entry level…" /></div>
       </div>
       <button class="btn-primary" id="cv-btn" onclick="generateCV()">
         <span id="cv-btn-text">Generate my CV</span>
       </button>
     </div>
-
     <div id="cv-output" class="output-card" style="display:none">
       <div class="output-header">
         <span class="output-title">Your CV</span>
-        <button class="btn-secondary" onclick="printOutput('cv-text', 'CV')">Download / Print</button>
+        <button class="btn-secondary" onclick="printOutput('cv-text','CV')">Download / Print</button>
       </div>
       <div id="cv-text" class="output-body"></div>
     </div>
@@ -374,35 +278,16 @@
     <div class="card">
       <div class="section-label">About you</div>
       <div class="form-grid">
-        <div class="form-group">
-          <label for="cl-name">Full name *</label>
-          <input id="cl-name" type="text" placeholder="e.g. Ama Owusu" />
-        </div>
-        <div class="form-group">
-          <label for="cl-role">Your current / recent role</label>
-          <input id="cl-role" type="text" placeholder="e.g. Junior Accountant" />
-        </div>
-        <div class="form-group full">
-          <label for="cl-background">Your background & key skills</label>
-          <textarea id="cl-background" placeholder="Briefly describe your experience, top skills, and a key achievement or two…"></textarea>
-        </div>
+        <div class="form-group"><label>Full name *</label><input id="cl-name" type="text" placeholder="e.g. Ama Owusu" /></div>
+        <div class="form-group"><label>Your current / recent role</label><input id="cl-role" type="text" placeholder="e.g. Junior Accountant" /></div>
+        <div class="form-group full"><label>Your background & key skills</label><textarea id="cl-background" placeholder="Briefly describe your experience, top skills, and a key achievement…"></textarea></div>
       </div>
       <div class="divider"><span>about the job</span></div>
       <div class="form-grid">
-        <div class="form-group">
-          <label for="cl-jobtitle">Job title applying for *</label>
-          <input id="cl-jobtitle" type="text" placeholder="e.g. Senior Accountant" />
-        </div>
-        <div class="form-group">
-          <label for="cl-company">Company name</label>
-          <input id="cl-company" type="text" placeholder="e.g. Ecobank Ghana" />
-        </div>
-        <div class="form-group full">
-          <label for="cl-jd">Job description / requirements (optional)</label>
-          <textarea id="cl-jd" placeholder="Paste key points from the job posting here for a more targeted letter…"></textarea>
-        </div>
-        <div class="form-group full">
-          <label for="cl-tone">Tone</label>
+        <div class="form-group"><label>Job title applying for *</label><input id="cl-jobtitle" type="text" placeholder="e.g. Senior Accountant" /></div>
+        <div class="form-group"><label>Company name</label><input id="cl-company" type="text" placeholder="e.g. Ecobank Ghana" /></div>
+        <div class="form-group full"><label>Job description / requirements (optional)</label><textarea id="cl-jd" placeholder="Paste key points from the job posting here…"></textarea></div>
+        <div class="form-group full"><label>Tone</label>
           <select id="cl-tone">
             <option value="professional and formal">Professional & formal</option>
             <option value="confident and direct">Confident & direct</option>
@@ -415,33 +300,27 @@
         <span id="cl-btn-text">Generate cover letter</span>
       </button>
     </div>
-
     <div id="cl-output" class="output-card" style="display:none">
       <div class="output-header">
         <span class="output-title">Your cover letter</span>
-        <button class="btn-secondary" onclick="printOutput('cl-text', 'Cover Letter')">Download / Print</button>
+        <button class="btn-secondary" onclick="printOutput('cl-text','Cover Letter')">Download / Print</button>
       </div>
       <div id="cl-text" class="output-body"></div>
     </div>
   </div>
 
-  <!-- AD SLOT BOTTOM -->
   <div class="ad-slot" style="margin-top:1.5rem">
-    <!-- AdSense Banner — replace with your ad code after approval -->
-    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+    <!-- AdSense ad — replace after approval -->
     Advertisement
   </div>
 
 </div>
 
 <footer>
-  <p>© 2025 CoverAndCV.com &nbsp;·&nbsp; Free AI-powered CV & cover letter generator &nbsp;·&nbsp; <a href="mailto:hello@coverandcv.com">Contact</a></p>
+  <p>© 2025 CoverAndCV.com &nbsp;·&nbsp; Free AI CV & cover letter generator &nbsp;·&nbsp; <a href="mailto:hello@coverandcv.com">Contact</a></p>
 </footer>
 
 <script>
-  const API_URL = 'https://api.anthropic.com/v1/messages';
-  const MODEL = 'claude-sonnet-4-20250514';
-
   function switchTab(tab, el) {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     el.classList.add('active');
@@ -449,52 +328,50 @@
     document.getElementById('cover-panel').style.display = tab === 'cover' ? 'block' : 'none';
   }
 
-  function setLoading(btnId, textId, loading) {
+  function setLoading(btnId, loading) {
     const btn = document.getElementById(btnId);
-    const span = document.getElementById(textId);
     btn.disabled = loading;
-    if (loading) {
-      btn.innerHTML = '<div class="spinner"></div><span>Generating your document…</span>';
-    } else {
-      btn.innerHTML = `<span id="${textId}">Generate again</span>`;
-    }
+    btn.innerHTML = loading
+      ? '<div class="spinner"></div><span>Generating your document…</span>'
+      : '<span>Generate again</span>';
   }
 
-  async function callAPI(prompt, outputTextId, outputCardId, btnId, btnTextId) {
-    setLoading(btnId, btnTextId, true);
+  const GEMINI_KEY = 'AIzaSyBB5hMEvGl-fyjsi0W7Cr0Aq4PYhPMt3mE';
+  const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`;
+
+  async function callAPI(prompt, outputTextId, outputCardId, btnId) {
+    setLoading(btnId, true);
     const outputCard = document.getElementById(outputCardId);
     const outputEl = document.getElementById(outputTextId);
     outputCard.style.display = 'block';
     outputEl.textContent = 'Writing your document…';
 
     try {
-      const res = await fetch(API_URL, {
+      const res = await fetch(GEMINI_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: MODEL,
-          max_tokens: 1000,
-          messages: [{ role: 'user', content: prompt }]
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { maxOutputTokens: 1000, temperature: 0.7 }
         })
       });
       const data = await res.json();
       if (data.error) throw new Error(data.error.message);
-      const text = (data.content || []).map(b => b.text || '').join('');
-      outputEl.textContent = text || 'No content returned. Please try again.';
+      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || 'No content returned.';
+      outputEl.textContent = text;
     } catch (err) {
-      outputEl.textContent = 'Something went wrong. Please check your connection and try again.\n\nError: ' + err.message;
+      outputEl.textContent = 'Something went wrong. Please try again.\n\nError: ' + err.message;
     }
-    setLoading(btnId, btnTextId, false);
+    setLoading(btnId, false);
   }
 
-  function generateCV() {
+    function generateCV() {
     const name = document.getElementById('cv-name').value.trim();
     const title = document.getElementById('cv-title').value.trim();
     if (!name || !title) { alert('Please enter your full name and target job title.'); return; }
 
-    const prompt = `You are a professional CV writer with 15 years of experience helping people land jobs globally. Write a polished, complete, ATS-friendly CV for this candidate. Use plain text only — no asterisks, no markdown, no bullet symbols like • or -. Use clear section headings in ALL CAPS followed by a line of dashes. Make it ready to copy and send.
+    const prompt = `You are a professional CV writer. Write a polished, complete, ATS-friendly CV for this candidate. Use plain text only — no asterisks, no markdown, no bullet symbols. Use section headings in ALL CAPS followed by a line of dashes. Make it ready to copy and send.
 
-CANDIDATE DETAILS:
 Name: ${name}
 Target Role: ${title}
 Email: ${document.getElementById('cv-email').value || 'Not provided'}
@@ -506,9 +383,9 @@ Education: ${document.getElementById('cv-education').value || 'Not provided'}
 Skills: ${document.getElementById('cv-skills').value || 'Not provided'}
 Extra notes: ${document.getElementById('cv-target').value || 'None'}
 
-Write a complete, professional CV. Start with the candidate's name and contact info, then a strong PROFESSIONAL SUMMARY section (3–4 lines), then WORK EXPERIENCE, EDUCATION, and SKILLS. If some details are missing, write reasonable placeholder text they can edit. Keep it to one page worth of content.`;
+Write a complete professional CV. Start with name and contact info, then PROFESSIONAL SUMMARY (3–4 lines), then WORK EXPERIENCE, EDUCATION, and SKILLS.`;
 
-    callAPI(prompt, 'cv-text', 'cv-output', 'cv-btn', 'cv-btn-text');
+    callAPI(prompt, 'cv-text', 'cv-output', 'cv-btn');
   }
 
   function generateCoverLetter() {
@@ -518,35 +395,28 @@ Write a complete, professional CV. Start with the candidate's name and contact i
 
     const tone = document.getElementById('cl-tone').value;
     const company = document.getElementById('cl-company').value.trim() || 'the company';
-    const prompt = `You are an expert cover letter writer. Write a compelling, ${tone} cover letter for this candidate. Use plain text only — no asterisks, no markdown formatting. 3–4 short paragraphs. Make it feel specific, human, and persuasive — not generic.
+    const prompt = `You are an expert cover letter writer. Write a compelling, ${tone} cover letter. Plain text only — no asterisks, no markdown. 3–4 short paragraphs. Human, specific, and persuasive.
 
-CANDIDATE:
-Name: ${name}
-Current/Recent Role: ${document.getElementById('cl-role').value || 'Not specified'}
-Background & Skills: ${document.getElementById('cl-background').value || 'Not provided'}
-
-JOB DETAILS:
+Candidate: ${name}
+Current Role: ${document.getElementById('cl-role').value || 'Not specified'}
+Background: ${document.getElementById('cl-background').value || 'Not provided'}
 Applying For: ${jobtitle}
 Company: ${company}
-Job Description/Requirements: ${document.getElementById('cl-jd').value || 'Not provided'}
+Job Requirements: ${document.getElementById('cl-jd').value || 'Not provided'}
 Tone: ${tone}
 
-Start with today's date (${new Date().toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'})}), then "Dear Hiring Manager," then the letter body, then a strong professional closing signed with the candidate's name. Do not use bullet points.`;
+Start with today's date (${new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}), then "Dear Hiring Manager," then the letter, then a strong closing signed with the candidate's name.`;
 
-    callAPI(prompt, 'cl-text', 'cl-output', 'cl-btn', 'cl-btn-text');
+    callAPI(prompt, 'cl-text', 'cl-output', 'cl-btn');
   }
 
   function printOutput(elId, label) {
     const text = document.getElementById(elId).textContent;
-    if (!text || text.includes('Writing your document')) { alert('Please generate a document first.'); return; }
+    if (!text || text.includes('Writing your')) { alert('Please generate a document first.'); return; }
     const win = window.open('', '_blank');
     win.document.write(`<!DOCTYPE html><html><head><title>${label} – CoverAndCV.com</title>
-    <style>
-      body { font-family: Georgia, 'Times New Roman', serif; max-width: 720px; margin: 2.5rem auto; padding: 0 1.5rem; line-height: 1.9; color: #111; font-size: 13.5px; }
-      pre { white-space: pre-wrap; font-family: inherit; }
-      @media print { body { margin: 1rem; } }
-    </style></head><body>
-    <pre>${text.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</pre>
+    <style>body{font-family:Georgia,serif;max-width:720px;margin:2.5rem auto;padding:0 1.5rem;line-height:1.9;color:#111;font-size:13.5px}pre{white-space:pre-wrap;font-family:inherit}@media print{body{margin:1rem}}</style>
+    </head><body><pre>${text.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</pre>
     <script>setTimeout(()=>window.print(),400);<\/script></body></html>`);
     win.document.close();
   }
